@@ -1,5 +1,4 @@
 #! /bin/bash
-# 宣告變數
 # Check OS support
 distr=`echo $(lsb_release -i | cut -d':' -f 2)`
 osver=`echo $(lsb_release -c | cut -d':' -f 2)`

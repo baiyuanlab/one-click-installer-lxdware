@@ -1,4 +1,7 @@
 config:
+  boot.autostart: "true"
+  limits.cpu: "1"
+  limits.memory: 256MB
   user.user-data: |
     #cloud-config
     package_update: true
@@ -13,3 +16,16 @@ config:
       - echo New MOTD >> /etc/motd
     runcmd:
       - [touch, /tmp/tonny_was_here]
+
+description: Default LXD profile
+devices:
+  eth0:
+    name: eth0
+    network: lxdbr0
+    type: nic
+  root:
+    path: /
+    pool: default
+    size: 10GB
+    type: disk
+name: dev

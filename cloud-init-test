@@ -1,0 +1,15 @@
+config:
+  user.user-data: |
+    #cloud-config
+    package_update: true
+    package_upgrade: true
+    packages:
+      - build-essential
+      - net-tools
+      - nmap
+    locale: es_ES.UTF-8
+    timezone: Asia/Taipei
+    bootcmd:
+      - echo New MOTD >> /etc/motd
+    runcmd:
+      - [touch, /tmp/tonny_was_here]

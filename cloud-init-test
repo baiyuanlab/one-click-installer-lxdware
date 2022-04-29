@@ -15,7 +15,7 @@ config:
     bootcmd:
       - echo New MOTD >> /etc/motd
     runcmd:
-      - [touch, /tmp/tonny_was_here]
+      - [touch, /tmp/touch_file]
 
 description: Default LXD profile
 devices:

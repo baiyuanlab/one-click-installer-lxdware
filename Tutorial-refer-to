@@ -3,3 +3,6 @@ https://youtu.be/iHSjH9Ekp7g
 
 # Cloud-config
 https://computecanada.github.io/DHSI-cloud-course/20-day3-wo-cloud-init/
+
+# How to set disk size?
+lxc config device override u1-20-04 root size=11GB

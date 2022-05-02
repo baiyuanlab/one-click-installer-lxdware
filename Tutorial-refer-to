@@ -9,3 +9,6 @@ lxc config device override u1-20-04 root size=11GB
 
 #Create Virtual Machine with Cloud Init Setup Using LXD and LXC
 https://blog.clouderation.com/?p=215
+
+# How to preconfigure LXD containers with cloud-init
+https://blog.simos.info/how-to-preconfigure-lxd-containers-with-cloud-init/

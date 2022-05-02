@@ -18,3 +18,4 @@ https://blog.simos.info/how-to-use-lxd-instance-types/
 
 #  How to set limits?
 lxc config set c1 limits.cpu=2 limits.memory=2GiB
+lxc config device override c1 root size=10GiB

@@ -20,7 +20,7 @@ https://blog.simos.info/how-to-use-lxd-instance-types/
 lxc config set c1 limits.cpu=2 limits.memory=2GiB
 lxc config device override c1 root size=10GiB
 lxc config device override c1 eth0 limits.max=10Mbit
-Lxc config device unset c1 eth0 limits.max
-Lxc launch ubuntu:20.04 c1 -t c4-m8
-Lxc launch ubuntu:20.04 c1 -t t1.micro
+lxc config device unset c1 eth0 limits.max
+lxc launch ubuntu:20.04 c1 -t c4-m8
+lxc launch ubuntu:20.04 c1 -t t1.micro
 lxc launch ubuntu:20.04 c1 --config=user.user-data="$(cat /tmp/my-user-data)"

@@ -24,3 +24,5 @@ lxc config device unset c1 eth0 limits.max
 lxc launch ubuntu:20.04 c1 -t c4-m8
 lxc launch ubuntu:20.04 c1 -t t1.micro
 lxc launch ubuntu:20.04 c1 --config=user.user-data="$(cat /tmp/my-user-data)"
+lxc config device override u1 root size=11GB
+lxc config device set u1 root size=8GB

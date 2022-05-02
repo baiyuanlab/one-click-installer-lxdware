@@ -5,7 +5,7 @@ https://youtu.be/iHSjH9Ekp7g
 https://computecanada.github.io/DHSI-cloud-course/20-day3-wo-cloud-init/
 
 # How to set disk size?
-lxc config device override u1-20-04 root size=11GB
+lxc config device override c1 root size=11GB
 
 #Create Virtual Machine with Cloud Init Setup Using LXD and LXC
 https://blog.clouderation.com/?p=215
@@ -15,3 +15,6 @@ https://blog.simos.info/how-to-preconfigure-lxd-containers-with-cloud-init/
 
 # How to use LXD instance types
 https://blog.simos.info/how-to-use-lxd-instance-types/
+
+#  How to set limits?
+lxc config set c1 limits.cpu=2 limits.memory=2GiB

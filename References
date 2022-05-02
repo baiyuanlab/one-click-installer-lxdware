@@ -21,3 +21,4 @@ lxc config set c1 limits.cpu=2 limits.memory=2GiB
 lxc config device override c1 root size=10GiB
 lxc config device override c1 eth0 limits.max=10Mbit
 Lxc config device unset c1 eth0 limits.max
+Lxc launch images:ubuntu/20.04 c1 -t c4-m8

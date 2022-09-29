@@ -1,2 +1,5 @@
 # one-click-installer-lxdware
-<clipboard-copy>
+
+```
+$ npm install copy-text-to-clipboard
+```

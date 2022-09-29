@@ -1,5 +1,5 @@
 # one-click-installer-lxdware
 
 ```
-$ command1
+command1
 ```

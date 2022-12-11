@@ -43,8 +43,8 @@ echo "**************************************************************************
 # Download and install lxd-dashboard
 lxc exec lxd-dashboard -- sh -c "wget https://github.com/lxdware/lxd-dashboard/archive/v3.6.0.tar.gz && tar -xzf v3.6.0.tar.gz"
 
-# Copy lxd-dashboard default config to /etc/nginx/sites-available and copy lxd-dashboard-3.4.0/lxd-dashboard to /var/www/html/
-lxc exec lxd-dashboard -- sh -c "cp -a lxd-dashboard-3.4.0/default /etc/nginx/sites-available/ && cp -a lxd-dashboard-3.6.0/lxd-dashboard /var/www/html/"
+# Copy lxd-dashboard default config to /etc/nginx/sites-available and copy lxd-dashboard-3.6.0/lxd-dashboard to /var/www/html/
+lxc exec lxd-dashboard -- sh -c "cp -a lxd-dashboard-3.6.0/default /etc/nginx/sites-available/ && cp -a lxd-dashboard-3.6.0/lxd-dashboard /var/www/html/"
 
 # Create dir /var/lxdware/data/sqlite and /var/lxdware/data/lxd and /var/lxdware/backups
 lxc exec lxd-dashboard -- sh -c "mkdir -p /var/lxdware/data/sqlite && mkdir -p /var/lxdware/data/lxd && mkdir -p /var/lxdware/backups"
